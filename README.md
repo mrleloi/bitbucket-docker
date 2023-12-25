@@ -19,7 +19,7 @@ default port: 7990
 - start bitbucket & mysql
 
 ```
-    git clone https://github.com/haxqer/bitbucket.git \
+    git clone https://github.com/mrleloi/bitbucket-docker.git \
         && cd bitbucket \
         && docker-compose pull \
         && docker-compose up
