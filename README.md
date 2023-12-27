@@ -56,7 +56,7 @@ default port: 7990
 ## How to hack bitbucket
 
 ```
-docker exec bitbucket-srv java -jar /var/agent/atlassian-agent.jar \
+docker exec bitbucket-srv java -jar /atlassian-agent.jar \
     -p bitbucket \
     -m Hello@world.com \
     -n Hello@world.com \
