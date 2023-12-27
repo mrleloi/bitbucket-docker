@@ -1,11 +1,9 @@
 version: '3.4'
 services:
   bitbucket:
-    image: mrleloi/bitbucket:7.21.16
+    # image: mrleloi/bitbucket:8.9.8
+    image: atlassian/bitbucket:8.9.8
     container_name: bitbucket-srv
-    build:
-      context: .
-      dockerfile: ./Dockerfile
     environment:
       - TZ=Asia/Ho_Chi_Minh
 #      - JVM_MINIMUM_MEMORY=1g
@@ -18,6 +16,8 @@ services:
       - "7999:7999"
     volumes:
       - home_data:/var/bitbucket
+      - ./atlassian-agent.jar:/atlassian-agent.jar:ro
+      - ./atlassian-extras-3.4.6.jar:/opt/atlassian/bitbucket/app/WEB-INF/lib/atlassian-extras-3.4.6.jar:ro
     restart: always
     networks:
       - network-bridge

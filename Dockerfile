@@ -2,7 +2,7 @@ FROM haxqer/jdk:8-git-python
 
 LABEL maintainer="haxqer <haxqer666@gmail.com>" version="7.21.16"
 
-ARG BITBUCKET_VERSION=7.21.16
+ARG BITBUCKET_VERSION=8.9.8
 ARG BITBUCKET_PRODUCT=bitbucket-software
 ARG AGENT_VERSION=1.3.3
 ARG MYSQL_DRIVER_VERSION=8.0.22
