@@ -5,7 +5,11 @@ services:
     image: atlassian/bitbucket:8.9.8
     container_name: bitbucket-srv
     environment:
-      - TZ=Asia/Ho_Chi_Minh
+      TZ: Asia/Ho_Chi_Minh
+      SERVER_SCHEME: 'https'
+      SERVER_SECURE: 'true'
+      SERVER_PROXY_PORT: '443'
+      SERVER_PROXY_NAME: 'crowd.baityapp.online'
 #      - JVM_MINIMUM_MEMORY=1g
 #      - JVM_MAXIMUM_MEMORY=12g
 #      - JVM_CODE_CACHE_ARGS='-XX:InitialCodeCacheSize=1g -XX:ReservedCodeCacheSize=8g'
