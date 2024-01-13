@@ -57,6 +57,7 @@ default port: 7990
 
 ```
 docker exec bitbucket-srv java -jar /atlassian-agent.jar \
+    -d \
     -p bitbucket \
     -m Hello@world.com \
     -n Hello@world.com \
